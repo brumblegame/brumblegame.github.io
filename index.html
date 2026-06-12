@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BRUMBLE - a tiny bee strategy game</title>
+<meta name="description" content="Brumble is a tiny bee strategy game. Harvest nectar, grow your swarm, defend your queen.">
+<meta property="og:title" content="BRUMBLE">
+<meta property="og:description" content="A tiny bee strategy game. Harvest nectar, grow your swarm, defend your queen.">
+<meta property="og:image" content="assets/brumble-avatar-1024.png">
+<link rel="icon" type="image/png" href="assets/brumble-avatar-400.png">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #221a10;
+    --honey: #ffc93c;
+    --honey-deep: #f0a500;
+    --cream: #fff6da;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: 'Baloo 2', 'Arial Rounded MT Bold', sans-serif;
+    background: var(--cream);
+    color: var(--ink);
+    text-align: center;
+  }
+  header {
+    padding: 48px 16px 8px;
+  }
+  header img {
+    width: min(640px, 92vw);
+    height: auto;
+  }
+  main {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 0 20px 40px;
+  }
+  .pitch {
+    font-size: 1.35rem;
+    font-weight: 600;
+    line-height: 1.5;
+  }
+  .cards {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 28px;
+  }
+  .card {
+    background: var(--honey);
+    border: 4px solid var(--ink);
+    border-radius: 18px;
+    padding: 18px 20px;
+    width: 200px;
+    box-shadow: 6px 6px 0 var(--ink);
+  }
+  .card h3 { margin: 0 0 6px; font-size: 1.1rem; }
+  .card p { margin: 0; font-size: 0.95rem; font-weight: 600; }
+  .soon {
+    display: inline-block;
+    margin-top: 36px;
+    background: var(--ink);
+    color: var(--honey);
+    border-radius: 999px;
+    padding: 10px 26px;
+    font-weight: 800;
+    letter-spacing: 2px;
+  }
+  footer {
+    padding: 28px 16px 40px;
+    font-weight: 600;
+    opacity: 0.75;
+  }
+</style>
+</head>
+<body>
+<header>
+  <img src="assets/logo.svg" alt="BRUMBLE - a tiny bee strategy game">
+</header>
+<main>
+  <p class="pitch">
+    You are the queen. Lead your swarm flower to flower, spam-tap workers
+    onto the best blooms, haul nectar home, and sting anyone who comes for your hive.
+  </p>
+  <div class="cards">
+    <div class="card">
+      <h3>Harvest</h3>
+      <p>Allocate workers to flowers with a tap. Fastest forager wins.</p>
+    </div>
+    <div class="card">
+      <h3>Defend</h3>
+      <p>Bees resting in the hive guard it with their lives. One for one.</p>
+    </div>
+    <div class="card">
+      <h3>Sting</h3>
+      <p>The queen dashes. Pick off couriers before the nectar lands.</p>
+    </div>
+  </div>
+  <span class="soon">IN DEVELOPMENT</span>
+</main>
+<footer>BRUMBLE &copy; 2026</footer>
+</body>
+</html>

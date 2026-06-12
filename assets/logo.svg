@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600" role="img" aria-label="BRUMBLE">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@800&amp;display=swap');
+    .word {
+      font-family: 'Baloo 2', 'Arial Rounded MT Bold', 'Segoe UI', sans-serif;
+      font-weight: 800;
+      font-size: 158px;
+      letter-spacing: 4px;
+      fill: url(#honey);
+      stroke: #221a10;
+      stroke-width: 14;
+      paint-order: stroke fill;
+      stroke-linejoin: round;
+    }
+    .tag {
+      font-family: 'Baloo 2', 'Arial Rounded MT Bold', 'Segoe UI', sans-serif;
+      font-weight: 800;
+      font-size: 34px;
+      letter-spacing: 14px;
+      fill: #221a10;
+    }
+  </style>
+  <defs>
+    <linearGradient id="honey" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffd84d"/>
+      <stop offset="0.55" stop-color="#ffc93c"/>
+      <stop offset="1" stop-color="#f0a500"/>
+    </linearGradient>
+    <clipPath id="bodyclip">
+      <ellipse cx="0" cy="0" rx="46" ry="32"/>
+    </clipPath>
+    <path id="arc" d="M 70 430 Q 500 330 930 430" fill="none"/>
+  </defs>
+
+  <!-- flight trail -->
+  <path d="M 180 240 C 260 140, 360 260, 430 180 S 470 120, 452 132"
+        fill="none" stroke="#221a10" stroke-width="5" stroke-linecap="round"
+        stroke-dasharray="1 18" opacity="0.55"/>
+
+  <!-- bee -->
+  <g transform="translate(520,128) rotate(-12)">
+    <ellipse cx="-12" cy="-36" rx="27" ry="15" fill="#dceeff" stroke="#221a10" stroke-width="5" transform="rotate(-28 -12 -36)" opacity="0.95"/>
+    <ellipse cx="16" cy="-34" rx="23" ry="13" fill="#eef7ff" stroke="#221a10" stroke-width="5" transform="rotate(-14 16 -34)" opacity="0.95"/>
+    <ellipse cx="0" cy="0" rx="46" ry="32" fill="url(#honey)" stroke="#221a10" stroke-width="7"/>
+    <g clip-path="url(#bodyclip)">
+      <rect x="-16" y="-34" width="17" height="68" fill="#221a10"/>
+      <rect x="12" y="-34" width="15" height="68" fill="#221a10"/>
+    </g>
+    <path d="M 44 -6 L 66 2 L 44 10 Z" fill="#221a10"/>
+    <circle cx="-44" cy="-2" r="19" fill="#221a10"/>
+    <circle cx="-50" cy="-7" r="4" fill="#ffffff"/>
+    <path d="M -52 -18 Q -62 -34 -74 -36" fill="none" stroke="#221a10" stroke-width="5" stroke-linecap="round"/>
+    <path d="M -42 -20 Q -44 -40 -54 -48" fill="none" stroke="#221a10" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="-74" cy="-37" r="5" fill="#221a10"/>
+    <circle cx="-55" cy="-49" r="5" fill="#221a10"/>
+  </g>
+
+  <!-- wordmark on a gentle arc -->
+  <text class="word" text-anchor="middle">
+    <textPath href="#arc" startOffset="50%">BRUMBLE</textPath>
+  </text>
+
+  <!-- tagline -->
+  <text class="tag" x="500" y="505" text-anchor="middle">A TINY BEE STRATEGY GAME</text>
+
+  <!-- honeycomb accents -->
+  <g fill="none" stroke="#221a10" stroke-width="5" opacity="0.5">
+    <path d="M 95 520 l 16 -9 16 9 0 19 -16 9 -16 -9 Z"/>
+    <path d="M 129 539 l 16 -9 16 9 0 19 -16 9 -16 -9 Z"/>
+    <path d="M 855 520 l 16 -9 16 9 0 19 -16 9 -16 -9 Z" />
+    <path d="M 889 539 l 16 -9 16 9 0 19 -16 9 -16 -9 Z"/>
+  </g>
+</svg>
